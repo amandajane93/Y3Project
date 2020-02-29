@@ -1,12 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost", "root", "", "social");
-
-if(mysqli_connect_errno()) {
-    echo "Failed to connect to database" . mysqli_connect_errno();
-}
-
-$query = mysqli_query($con, "INSERT INTO test VALUES ('', 'test')");
+require 'config/config.php';
 
 ?>
 
@@ -19,6 +13,6 @@ $query = mysqli_query($con, "INSERT INTO test VALUES ('', 'test')");
     <title>HospitalityWorld</title>
 </head>
 <body>
-    Hospitality World
+    Welcome to Hospitality World
 </body>
 </html>
