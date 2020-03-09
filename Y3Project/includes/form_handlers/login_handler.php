@@ -23,7 +23,7 @@
         exit();
      }
      else { 
-         array_push($error_array, "Email or Password was incorrect<br>");
+         array_push($error_array, "Incorrect Credentials<br>");
      }
  }
 

@@ -14,7 +14,9 @@ require 'includes/form_handlers/login_handler.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Hospitality World </title>
     <link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/register.js"></script>
 </head>
 <body>
@@ -64,7 +66,7 @@ require 'includes/form_handlers/login_handler.php';
                 <br>     
                 <input type="password" name="log_password" placeholder="Password">   
                 <br>     
-                <?php if(in_array("Email or Password was incorrect<br>", $error_array)) echo "Email or Password was incorrect<br>";?>
+                <?php if(in_array("Incorrect Credentials<br>", $error_array)) echo "Incorrect Credentials<br>";?>
                 <input type="submit" name="login_button" value="Login">   
                 <br>     
                 <a href="#" id="signup" class="signup">Need An Account ? Register Here ! </a>
