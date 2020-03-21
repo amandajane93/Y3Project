@@ -6,6 +6,7 @@
     border-bottom: 4px solid rgb(102, 69, 41);
     margin: 0 0 10px 0;
     display: inline-flex;
+    position: fixed;
 }
 
 .logo a{ 
@@ -21,4 +22,27 @@
 
 a:hover{
     text-decoration: none;
+}
+
+nav { 
+    float: right;
+    right: 1px;
+    position: absolute;
+    margin: 10px;
+}
+
+nav a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.wrapper{ 
+    margin: 0 auto;
+    top:  50px;
+    position: relative;
+    padding: 0 10px;
+    width: 75%;
+    min-width: 950px ;
 }
