@@ -120,13 +120,13 @@ if (isset($_POST['register_button'])){
         //give user profile picture 
         $rand = rand(1, 2);
         if ($rand == 1) 
-        $profile_pic = "assets/images/profile_pictures/default1.png"; 
+        $profile_pic = "assets/images/profile_pictures/defaults/default1.png";
         else if ($rand ==2)
-        $profile_pic = "assets/images/profile_pictures/default2.png";
+        $profile_pic = "assets/images/profile_pictures/defaults/default2.png";
 
         $query = mysqli_query($con, "insert into users VALUES ('','$fname','$lname', '$username', '$city', '$country', '$email', '$password', '$age', '$date', '$profile_pic', '0','0', 'no', ',') ");
 
-        array_push($error_array, "<span style='color:#7CFC00;'> You are registered ! You can now log in! </span><br>");
+        array_push($error_array, "<span style='color:#7CFC00;'>  You are registered ! You can now log in! </span><br>");
 
         //clearing variables once registered 
 
