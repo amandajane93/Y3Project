@@ -14,7 +14,7 @@ require 'includes/form_handlers/login_handler.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Hospitality World </title>
     <link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/register.js"></script>
 </head>
 <body>
@@ -133,9 +133,11 @@ require 'includes/form_handlers/login_handler.php';
 
 
             <input type="submit" name="register_button" value="Register">
+					<br>
 
-            <?php if(in_array("<span style='color:rgb(102, 69, 41);'> You are registered ! You can now log in! </span><br>", $error_array)) echo "<span style='color:#7CFC00;'> You are registered ! You can now log in! </span><br>"; ?>
-            <a href="#" id="signin" class="signin"> Already registered ? Sign in here ! </a>
+					<?php if(in_array("<span style='color: #14C800;'>You are registered ! You can now log in! </span><br>", $error_array)) echo "<span style='color: #14C800;'>You're all set! Go ahead and login!</span><br>"; ?>
+					<a href="#" id="signin" class="signin">Already Registered ? Sign in here!</a>
+            
             </form>
         </div>
 
