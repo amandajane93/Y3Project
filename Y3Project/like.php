@@ -23,7 +23,20 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
 </head> 
 <body>
+    <style type="text/css">
     
+    body{ 
+        background-color: #ffe8a4;
+    }
+    form { 
+    
+    position: absolute;
+    top: 0;
+
+}
+
+
+    </style>
 <?php 
 
 //Get id of post

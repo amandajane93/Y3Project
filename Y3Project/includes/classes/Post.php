@@ -11,7 +11,7 @@ class Post {
 	public function submitPost($body, $user_to) {
 		$body = strip_tags($body); //removes html tags 
 		$body = mysqli_real_escape_string($this->con, $body);
-		$check_empty = preg_replace('/\s+/', '', $body); //Deltes all spaces 
+		$check_empty = preg_replace('/\s+/', '', $body); //Deletes all spaces 
       
 		if($check_empty != "") {
 
