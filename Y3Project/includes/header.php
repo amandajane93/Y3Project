@@ -25,13 +25,16 @@ else{
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
-
+    <script src="assets/js/bootbox.min.js"></script>
     <script src="assets/js/hospitalityworld.js"></script>
+    <script src="assets/js/jquery.Jcrop.js"></script>
+	  <script src="assets/js/jcrop_bits.js"></script>
 
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.Jcrop.css" type="text/css" />
 
 </head>
 
@@ -55,8 +58,8 @@ else{
       <i class="fa fa-bell fa-lg"></i>
     </a>
     <a href="requests.php">
-      <i class="fa fa-user-circle fa-lg"></i>
-      </a>
+      <i class="fa fa-user fa-lg"></i>
+    </a>
     <a href="#">
       <i class="fa fa-envelope fa-lg"></i>
       </a>

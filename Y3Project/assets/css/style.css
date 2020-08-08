@@ -303,3 +303,25 @@ textarea:focus{
     color: chocolate;
     background-color: aliceblue;
 }
+
+.delete_button { 
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    float: unset;
+    border-radius: 5px;
+    right: -20px;
+    position: relative;
+}
+
+.profile_main_column{ 
+    min-width: 675px;
+    float: left;
+    width: 70%;
+    z-index: -1;
+}
+
+.profile_info_bottom{ 
+    margin: 10px 0 0 7px;
+
+}
