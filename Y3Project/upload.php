@@ -32,7 +32,7 @@ if(isset($_FILES['image']['name'])){
 	//Move the file to correct location
 		$move = move_uploaded_file($ImageTempName ,$fullpath) ; 
 		chmod($fullpath, 0777);  
-		//Check for valid uplaod
+		//Check for valid upload
 		if (!$move) { 
 			die ('File didnt upload');
 		} else { 

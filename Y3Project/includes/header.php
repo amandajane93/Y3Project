@@ -3,6 +3,7 @@
 require 'config/config.php';
 include("includes/classes/User.php");
 include("includes/classes/Post.php");
+include("includes/classes/Message.php");
 
 if (isset($_SESSION['username'])) { 
     $userLoggedIn = $_SESSION['username'];
@@ -60,7 +61,7 @@ else{
     <a href="requests.php">
       <i class="fa fa-user fa-lg"></i>
     </a>
-    <a href="#">
+    <a href="messages.php">
       <i class="fa fa-envelope fa-lg"></i>
       </a>
       <a href="includes/handlers/logout.php">
