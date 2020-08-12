@@ -17,6 +17,7 @@ a{
     margin: 0 0 10px 0;
     display: inline-flex;
     position: fixed;
+    z-index: 10;
 }
 
 .logo a{ 
@@ -459,4 +460,52 @@ textarea:focus{
 
 .tab-content { 
     margin-top: 25px;
+}
+
+.dropdown_data_window { 
+    padding: 0px;
+    height: 179px;
+    border: 1px solid rgb(218, 218, 218);
+    background-color: antiquewhite;
+    border-radius: 0px 0px 5px 5px;
+    width: 250px;
+    position: absolute;
+    right: 10px;
+    top: 37px;
+    overflow: scroll;
+}
+
+.notification_badge { 
+    padding: 3px 7px;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 1;
+    color: brown;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;        
+    background-color: bisque;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    top: -5px;
+}
+
+.resultDisplayNotification { 
+    background-color: bisque;
+    height: auto;
+    color: brown;
+    padding-bottom: 6px;
+}
+
+.resultDisplayNotification img{ 
+    height: 40px;
+    border-radius: 5px;
+    margin: 1px 10px 1px 2px;
+    float: left;
+}
+
+.timestamp_smaller { 
+    font-size: 85% ;
+    margin: 0;
 }

@@ -195,8 +195,8 @@ class Message {
 			}
 		}
 
-		$num_iterations = 0; //Number of messages checked 
-		$count = 1; //Number of messages posted
+		$num_iterations = 0; 
+		$count = 1; 
 
 		foreach($conversations as $username) {
 
@@ -211,7 +211,7 @@ class Message {
 
 			$is_unread_query = mysqli_query($this->con, "SELECT opened FROM messages WHERE user_to='$userLoggedIn' AND user_from='$username' ORDER BY id DESC");
 			$row = mysqli_fetch_array($is_unread_query);
-			$style = ($row['opened'] == 'no') ? "background-color: #DDEDFF;" : "";
+			$style = (isset($row['opened']) && $row['opened'] == 'no') ? "background-color: #DDEDFF;" : "";
 
 
 			$user_found_obj = new User($this->con, $username);
@@ -235,7 +235,7 @@ class Message {
 		if($count > $limit)
 			$return_string .= "<input type='hidden' class='nextPageDropdownData' value='" . ($page + 1) . "'><input type='hidden' class='noMoreDropdownData' value='false'>";
 		else 
-			$return_string .= "<input type='hidden' class='noMoreDropdownData' value='true'> <p style='text-align: center;'>No more messages to load!</p>";
+			$return_string .= "<input type='hidden' class='noMoreDropdownData' value='true'> <p style='text-align: center;'>No messages left</p>";
 
 		return $return_string;
 	}
