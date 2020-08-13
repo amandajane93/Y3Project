@@ -154,7 +154,6 @@ if($userLoggedIn != $username){
 
 </div>
 
-<!-- Modal -->
 <div class="modal fade" id="post_form" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -195,8 +194,7 @@ if($userLoggedIn != $username){
 	$(document).ready(function() {
 
 		$('#loading').show();
-
-		//Original ajax request for loading first posts 
+ 
 		$.ajax({
 			url: "includes/handlers/ajax_load_profile_posts.php",
 			type: "POST",
@@ -210,7 +208,7 @@ if($userLoggedIn != $username){
 		});
 
 		$(window).scroll(function() {
-			var height = $('.posts_area').height(); //Div containing posts
+			var height = $('.posts_area').height(); 
 			var scroll_top = $(this).scrollTop();
 			var page = $('.posts_area').find('.nextPage').val();
 			var noMorePosts = $('.posts_area').find('.noMorePosts').val();

@@ -42,12 +42,32 @@ else{
 
 <body>
 
-<!-- Top Bar --> 
 <div class="top_bar">
 
   <div class="logo">
     <a href="index.php">Hospitality World</a>
   </div> 
+
+  <div class="search">
+
+			<form action="search.php" method="GET" name="search_form">
+				<input type="text" onkeyup="getLiveSearchUsers(this.value, '<?php echo $userLoggedIn; ?>')" name="q" placeholder="Search..." autocomplete="off" id="search_text_input">
+
+				<div class="button_holder">
+					<img src="assets/images/icons/search.png">
+				</div>
+
+			</form>
+
+			<div class="search_results">
+			</div>
+
+			<div class="search_results_footer_empty">
+			</div>
+
+
+
+		</div>
 
   <nav>
 
@@ -90,6 +110,9 @@ else{
       if ($num_messages > 0 ) 
       echo '<span class="notification_badge" id="unread_message">' . $num_messages . '</span>';
       ?>
+      </a>
+      <a href="settings.php">
+      <i class="fa fa-cog fa-lg"></i>
       </a>
       <a href="includes/handlers/logout.php">
       <i class="fa fa-sign-out fa-lg"></i>

@@ -106,6 +106,7 @@ require 'includes/form_handlers/login_handler.php';
             ?>"required>
             <br>
 
+            
             <input type="email" name="reg_email" placeholder="Email" value="<?php 
             if(isset($_SESSION['reg_email'])) { 
                 echo $_SESSION['reg_email'];
@@ -119,6 +120,7 @@ require 'includes/form_handlers/login_handler.php';
             }
             ?>"required>
             <br>
+
             <?php if(in_array("Email Already in Use <br>", $error_array)) echo "Email Already in Use <br>"; 
                 else if(in_array("Invalid Format <br>", $error_array)) echo "Invalid Format <br>"; 
                 else if(in_array("Your emails do not match <br>", $error_array)) echo "Your emails do not match <br>"; ?>
